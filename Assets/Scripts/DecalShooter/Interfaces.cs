@@ -8,5 +8,7 @@ using UnityEngine;
 
         void ApplyExplosionDamage(Vector3 velocity);
         
+    void ApplyAttractionForce(Vector3 attractionForce,bool Activate);
+
 
 }

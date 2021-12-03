@@ -14,4 +14,17 @@ public class CSCT : MonoBehaviour, IDamageable
     {
         GetComponent<Rigidbody>().AddForce(velocity,ForceMode.Impulse);
     }
+
+    public void ApplyAttractionForce(Vector3 attractionForce, bool Activate)
+    {
+        if (!Activate)
+        {
+            GetComponent<Rigidbody>().useGravity = true;
+            ApplyExplosionDamage(attractionForce * -1);
+            return;
+        }
+        GetComponent<Rigidbody>().useGravity = false;
+        GetComponent<Rigidbody>().AddForce(attractionForce, ForceMode.Force);
+    }
+
 }
