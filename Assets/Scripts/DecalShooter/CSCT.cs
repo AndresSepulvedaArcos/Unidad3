@@ -9,4 +9,9 @@ public class CSCT : MonoBehaviour, IDamageable
         hit.transform.GetComponent<Rigidbody>()?.AddForce(hit.normal * -1, ForceMode.Impulse);
 
     }
+
+    public void ApplyExplosionDamage(Vector3 velocity)
+    {
+        GetComponent<Rigidbody>().AddForce(velocity,ForceMode.Impulse);
+    }
 }

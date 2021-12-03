@@ -6,4 +6,7 @@ using UnityEngine;
 {
       void ApplyDamage(RaycastHit hit);
 
+        void ApplyExplosionDamage(Vector3 velocity);
+        
+
 }

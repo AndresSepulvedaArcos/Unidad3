@@ -12,4 +12,9 @@ public class CSBox : MonoBehaviour, IDamageable
         obj.transform.SetParent(hit.transform);
 
     }
+    public void ApplyExplosionDamage(Vector3 velocity)
+    {
+        GetComponent<Rigidbody>().AddForce(velocity, ForceMode.Impulse);
+    }
 }
+ 

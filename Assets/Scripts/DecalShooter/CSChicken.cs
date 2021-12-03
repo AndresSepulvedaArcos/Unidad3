@@ -8,5 +8,9 @@ public class CSChicken : MonoBehaviour,IDamageable
     {
          Destroy(gameObject);
     }
-     
+    public void ApplyExplosionDamage(Vector3 velocity)
+    {
+        GetComponent<Rigidbody>().AddForce(velocity, ForceMode.Impulse);
+    }
 }
+ 
