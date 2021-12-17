@@ -20,6 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
+    - Speed: 0.25
     - Vector1_A009FB8D: 15.78
     - Vector1_A606AA6A: 0.13
     m_Colors:
